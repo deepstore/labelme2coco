@@ -173,9 +173,9 @@ class labelme2coco(object):
         self.data_coco = self.data2coco()
         print("self.data_coco: ", self.data_coco)
 
-        # print(self.save_json_path)
+        print(self.save_json_path)
 
-        # json.dump(self.data_coco, open(self.save_json_path, "w"), indent=4)
+        json.dump(self.data_coco, open(self.save_json_path, "w"), indent=4)
 
 
 labelme_json = glob.glob("./内径キズ_b_反転_div8/*.json")
